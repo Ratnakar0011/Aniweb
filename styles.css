@@ -1,0 +1,797 @@
+/* =====================================================
+   RESET
+   ===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #080808;
+
+    color: white;
+}
+
+
+/* =====================================================
+   HERO
+   ===================================================== */
+
+#home {
+
+    min-height: 100vh;
+
+    padding: 0 7%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.90),
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.35)
+        ),
+
+        url("./assets/naruto.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+}
+
+
+/* =====================================================
+   NAVIGATION
+   ===================================================== */
+
+nav {
+
+    width: 100%;
+
+    height: 80px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    position: relative;
+
+    z-index: 10;
+}
+
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 30px;
+
+    font-weight: 900;
+
+    color: #e50914;
+}
+
+
+.logo span {
+
+    color: #e50914;
+}
+
+
+.nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 40px;
+}
+
+
+.nav-links a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+
+.nav-links a:hover {
+
+    color: #e50914;
+}
+
+
+/* =====================================================
+   HERO CONTENT
+   ===================================================== */
+
+.hero {
+
+    flex: 1;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 80px;
+
+    max-width: 1200px;
+
+    width: 100%;
+
+    margin: auto;
+}
+
+
+/* =====================================================
+   POSTER
+   ===================================================== */
+
+.poster-container {
+
+    width: 270px;
+
+    height: 400px;
+
+    flex-shrink: 0;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.7);
+}
+
+
+.poster-container img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.4s;
+}
+
+
+.poster-container:hover img {
+
+    transform: scale(1.04);
+}
+
+
+/* =====================================================
+   HERO INFORMATION
+   ===================================================== */
+
+.hero-info {
+
+    max-width: 600px;
+
+    width: 100%;
+}
+
+
+.popular {
+
+    margin-bottom: 12px;
+
+    color: #e50914;
+
+    font-size: 16px;
+
+    font-weight: bold;
+}
+
+
+.hero-info h1 {
+
+    margin-bottom: 15px;
+
+    font-size: 68px;
+
+    line-height: 1;
+
+    font-weight: 900;
+}
+
+
+/* =====================================================
+   META
+   ===================================================== */
+
+.anime-meta {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 18px;
+
+    font-size: 14px;
+}
+
+
+.hd {
+
+    padding: 3px 7px;
+
+    border-radius: 3px;
+
+    background: #19c37d;
+
+    color: #000;
+
+    font-size: 11px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   DESCRIPTION
+   ===================================================== */
+
+#description {
+
+    max-width: 570px;
+
+    margin-bottom: 18px;
+
+    color: #dddddd;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   RATING
+   ===================================================== */
+
+.rating {
+
+    margin-bottom: 25px;
+
+    color: #e50914;
+
+    font-size: 22px;
+
+    letter-spacing: 4px;
+}
+
+
+/* =====================================================
+   BUTTONS
+   ===================================================== */
+
+.buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.watch-btn {
+
+    padding: 14px 25px;
+
+    border-radius: 6px;
+
+    background: #e50914;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.watch-btn:hover {
+
+    background: #ff1a25;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(229, 9, 20, 0.35);
+}
+
+
+.trailer-btn {
+
+    padding: 13px 25px;
+
+    border: 1px solid white;
+
+    border-radius: 6px;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.trailer-btn:hover {
+
+    background: white;
+
+    color: black;
+}
+
+
+/* =====================================================
+   SLIDER CONTROLS
+   ===================================================== */
+
+.slider-controls {
+
+    width: 100%;
+
+    height: 90px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    position: relative;
+
+    z-index: 10;
+}
+
+
+.available {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    color: #cccccc;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+}
+
+
+.available span {
+
+    color: white;
+
+    letter-spacing: 0;
+}
+
+
+/* =====================================================
+   ARROWS
+   ===================================================== */
+
+.arrows {
+
+    display: flex;
+
+    gap: 10px;
+}
+
+
+.arrows button {
+
+    width: 52px;
+
+    height: 52px;
+
+    border: 1px solid white;
+
+    border-radius: 50%;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    color: white;
+
+    font-size: 21px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.arrows button:hover {
+
+    background: #e50914;
+
+    border-color: #e50914;
+
+    color: white;
+}
+
+
+/* =====================================================
+   SLIDE NUMBER
+   ===================================================== */
+
+.slide-number {
+
+    color: #e50914;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   MUSIC
+   ===================================================== */
+
+#music {
+
+    padding: 75px 6%;
+
+    background: #090909;
+}
+
+
+section h2 {
+
+    margin-bottom: 40px;
+
+    text-align: center;
+
+    font-size: 32px;
+}
+
+
+.music-container {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+
+.music-card {
+
+    width: 280px;
+
+    padding: 22px;
+
+    border-radius: 12px;
+
+    background: #161616;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+
+.music-card:hover {
+
+    transform: translateY(-5px);
+
+    background: #202020;
+}
+
+
+.music-card h3 {
+
+    margin-bottom: 18px;
+
+    font-size: 16px;
+}
+
+
+.music-card audio {
+
+    width: 100%;
+}
+
+
+/* =====================================================
+   TRAILERS
+   ===================================================== */
+
+#trailers {
+
+    padding: 75px 6%;
+
+    background: #050505;
+}
+
+
+.trailer-container {
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 22px;
+}
+
+
+.trailer-card {
+
+    width: 380px;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    background: #161616;
+
+    transition: 0.3s;
+}
+
+
+.trailer-card:hover {
+
+    transform: translateY(-5px);
+
+    background: #202020;
+}
+
+
+.trailer-card h3 {
+
+    padding: 15px;
+
+    font-size: 16px;
+}
+
+
+.trailer-card video {
+
+    width: 100%;
+
+    display: block;
+}
+
+
+/* =====================================================
+   ABOUT
+   ===================================================== */
+
+#about {
+
+    padding: 75px 6%;
+
+    text-align: center;
+
+    background: #101010;
+}
+
+
+#about p {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    color: #bbbbbb;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+footer {
+
+    padding: 25px;
+
+    text-align: center;
+
+    background: #000;
+
+    color: #999;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   TABLET
+   ===================================================== */
+
+@media (max-width: 900px) {
+
+    #home {
+
+        padding: 0 30px;
+    }
+
+
+    .hero {
+
+        gap: 45px;
+    }
+
+
+    .poster-container {
+
+        width: 230px;
+
+        height: 340px;
+    }
+
+
+    .hero-info h1 {
+
+        font-size: 55px;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    #home {
+
+        min-height: 100vh;
+
+        padding: 0 20px;
+    }
+
+
+    nav {
+
+        height: auto;
+
+        padding: 20px 0;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .nav-links {
+
+        gap: 18px;
+    }
+
+
+    .nav-links a {
+
+        font-size: 13px;
+    }
+
+
+    .hero {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 25px;
+
+        padding: 30px 0;
+    }
+
+
+    .poster-container {
+
+        width: 190px;
+
+        height: 280px;
+    }
+
+
+    .hero-info {
+
+        width: 100%;
+    }
+
+
+    .hero-info h1 {
+
+        font-size: 45px;
+    }
+
+
+    #description {
+
+        font-size: 14px;
+    }
+
+
+    .buttons {
+
+        justify-content: center;
+    }
+
+
+    .slider-controls {
+
+        height: 75px;
+    }
+
+
+    .available {
+
+        display: none;
+    }
+
+}
